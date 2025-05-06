@@ -2,7 +2,6 @@
 
 #include <memory>
 
-#include "ComputerClub.hpp"
 #include "Client.hpp"
 
 class ComputerTable {
@@ -12,7 +11,7 @@ public:
 
     void changeClient(const std::shared_ptr<Client> cl);
 
-    ComputerTable& setNumber(unsigned int num);
+    void setNumber(unsigned int num);
     bool isBusy() const;
     std::shared_ptr<const Client> getClient() const;
 private:

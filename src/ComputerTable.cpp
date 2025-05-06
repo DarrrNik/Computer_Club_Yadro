@@ -10,6 +10,6 @@ void ComputerTable::changeClient(const std::shared_ptr<Client> cl) {
     client = cl; 
 }
 
-ComputerTable& ComputerTable::setNumber(unsigned int num) { number = num; }
+void ComputerTable::setNumber(unsigned int num) { number = num; }
 bool ComputerTable::isBusy() const { return busy; }
 std::shared_ptr<const Client> ComputerTable::getClient() const { return client; }
